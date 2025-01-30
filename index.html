@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/tailwind.config.js" />
+    <title>Document</title>
+    <!--font awsome -->
+    <script
+      src="https://kit.fontawesome.com/351ef354a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--gogle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Daisy ui-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-heading {
+        font-family: "ADLaM Display", serif;
+      }
+      .font-paragraph {
+        font-family: "Sora", serif;
+      }
+    </style>
+    <!--Tailwind CSS-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bgHead: "#FFF9F4",
+              bgPrimary: "#F9DF8A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--Navbar section-->
+      <section class="w-full bg-bgHead">
+        <section class="container mx-auto bg-bgHead">
+          <nav class="font-paragraph">
+            <div class="navbar">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn btn-ghost lg:hidden"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                  >
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <a class="text-2xl font-bold flex items-center">
+                  <img src="/c1-assets/logo-header.png" alt="" /> Pet
+                  <span class="text-warning">House</span></a
+                >
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end gap-x-3">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a class="btn btn-outline btn-warning bg-none text-white"
+                  >Login</a
+                >
+                <a class="btn btn-warning">Register</a>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </section>
+      <!--Hero section-->
+      <section
+        class="my-20 container sm:w-full lg:h-screen h-[1100px] lg:px-5 px-5 sm:pt-10 mx-auto bg-[url('./c1-assets/cat-big.png')] bg-center bg-no-repeat bg-contain lg:bg-center lg:bg-no-repeat lg: sm:bg-center sm:bg-contain sm:bg-no-repeat"
+      >
+        <div class="font-paragraph container mx-auto">
+          <h1 class="font-heading text-6xl font-bold">
+            Pamper Your Pet, <br />Because They Deserve <br />the Bes
+          </h1>
+          <p class="my-10 text-xl">
+            Discover a world of treats, toys, and essentials handpicked for
+            <br />your furry friends. Shop now and make tails wag with joy!
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main class="container mx-auto">
+      <!--Browse By Categories-->
+      <h1 class="font-heading text-3xl">Browse By Categories</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+        <div class="card bg-bgPrimary my-20 h-64 pt-10">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+            >
+              <img src="/c1-assets/dog-cartoon.png" />
+            </div>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl">Dog</h2>
+            <p class="text-xs">3 items</p>
+            <div class="card-actions"></div>
+          </div>
+        </div>
+        <div class="card bg-bgPrimary my-20 pt-10">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+            >
+              <img src="/c1-assets/fish-cartoon.png" />
+            </div>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl">Fish</h2>
+            <p class="text-xs">3 items</p>
+            <div class="card-actions"></div>
+          </div>
+        </div>
+        <div class="card bg-bgPrimary my-20 pt-10">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-24 rounded-full ring mx-auto"
+            >
+              <img src="/c1-assets/cat-cartoon.png" />
+            </div>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl">Cat</h2>
+            <p class="text-xs">3 items</p>
+            <div class="card-actions"></div>
+          </div>
+        </div>
+        <div class="card bg-bgPrimary my-20 pt-10">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+            >
+              <img src="/c1-assets/bird-cartoon.png" />
+            </div>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl">Bird</h2>
+            <p class="text-xs">3 items</p>
+            <div class="card-actions"></div>
+          </div>
+        </div>
+        <div class="card bg-bgPrimary my-20 pt-10">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+            >
+              <img src="/c1-assets/cute-pet-small.png" />
+            </div>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl">Small pet</h2>
+            <p class="text-xs">3 items</p>
+            <div class="card-actions"></div>
+          </div>
+        </div>
+        <div class="card bg-bgPrimary my-20 pt-10">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+            >
+              <img src="/c1-assets/rabbit-cartoon.png" />
+            </div>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl">Rabit</h2>
+            <p class="text-xs">3 items</p>
+            <div class="card-actions"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
