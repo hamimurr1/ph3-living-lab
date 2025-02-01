@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/tailwind.config.js" />
-    <title>Pet House</title>
+    <title>My Pet</title>
     <!--font awsome -->
     <script
       src="https://kit.fontawesome.com/351ef354a9.js"
@@ -310,7 +310,7 @@
       <section class="my-12 lg:my-32 bg-bgHead py-12 lg:py-32">
         <div class="container mx-auto">
           <div class="mb-9 md:mb-12">
-            <h2 class="section-heading text-black mx-6 font-heading">
+            <h2 class="section-heading text-black mx-6 font-heading text-2xl">
               Trending Pet Products
             </h2>
           </div>
@@ -319,7 +319,7 @@
             class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 bg-bgHead"
           >
             <div
-              class="col-span-1 row-span-3 bg-[url('/c1-assets/cute-pet-small.png')] bg-no-repeat bg-right bg-contain bg-bgPrimary text-white rounded-md shadow-sm hover:"
+              class="col-span-2 row-span-3 bg-[url('./c1-assets/cute-pet-small.png')] bg-no-repeat bg-right bg-contain bg-bgPrimary text-white rounded-md shadow-sm hover:"
             >
               <div class="px-8 py-10 space-y-6 text-black">
                 <h3 class="card-heading font-heading">T- Shirt For Dogs</h3>
@@ -484,7 +484,7 @@
                 <p>$39.99</p>
               </div>
             </div>
-            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+            <div class="hidden lg:flex gap-4 bg-base-100 rounded-md p-4">
               <div
                 class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
               >
@@ -501,6 +501,59 @@
                 </small>
                 <h4>Cat</h4>
                 <p>$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Everyday low Price section-->
+
+      <section class="my-12 lg:my-32">
+        <div class="container mx-auto">
+          <div class="mb-9 md:mb-12">
+            <h2 class="section-heading text-black font-heading text-4xl">
+              Everyday low Price
+            </h2>
+          </div>
+          <!-- price-cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+            <div
+              class="col-span-1 lg:col-span-6 bg-gradient-to-t from-[#F8CCFB] to-[#ACD2FD] rounded-md text-white"
+            >
+              <div
+                class="w-full h-full bg-[url('./c1-assets/cute-dog-mid.png')] bg-no-repeat bg-right bg-contain rounded-md"
+              >
+                <div class="px-20 py-36">
+                  <p class="text-black font-paragrapsh text-xl">Under Price</p>
+                  <h3 class="card-heading font-heading text-black text-4xl">
+                    Pet Grooming Mitt
+                  </h3>
+                  <h4 class="text-xl text-white font-paragraph">
+                    (Easy Hair Removal)
+                  </h4>
+                  <h1 class="primary-heading text-black font-heading text-5xl">
+                    $7.99
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-1 lg:col-span-4 relative bg-gradient-to-t from-[#FFF9F4] to-[#F9DF8A] rounded-md text-"
+            >
+              <div
+                class="w-full h-full bg-[url('./c1-assets/cute-pet-mid.png')] bg-no-repeat bg-right rounded-md border"
+              >
+                <div class="px-20 py-36">
+                  <h3 class="card-heading font-heading text-4xl">
+                    Pet Grooming Mitt
+                  </h3>
+
+                  <h1
+                    class="primary-heading font-heading text-5xl text-yellow-500"
+                  >
+                    $7.99
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
