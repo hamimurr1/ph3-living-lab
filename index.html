@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/tailwind.config.js" />
-    <title>Document</title>
+    <title>Pet House</title>
     <!--font awsome -->
     <script
       src="https://kit.fontawesome.com/351ef354a9.js"
@@ -36,6 +36,13 @@
       }
       .font-paragraph {
         font-family: "Sora", serif;
+      }
+      .marquee-hero {
+        background-color: hsl(209, 47%, 49%);
+        font-size: 1.5rem;
+        color: #f7f7f7;
+        padding: 0.5rem 0;
+        border-radius: 2rem;
       }
     </style>
     <!--Tailwind CSS-->
@@ -131,10 +138,14 @@
       </section>
     </header>
 
-    <main class="container mx-auto">
+    <main>
       <!--Browse By Categories-->
-      <h1 class="font-heading text-3xl">Browse By Categories</h1>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+      <h1 class="font-heading text-3xl container mx-auto">
+        Browse By Categories
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 container mx-auto"
+      >
         <div class="card bg-bgPrimary my-20 h-64 pt-10">
           <div class="avatar">
             <div
@@ -220,6 +231,281 @@
           </div>
         </div>
       </div>
+      <!--Pet Health section-->
+      <div class="marquee-hero font-heading">
+        <marquee behavior="slide loop" direction="left right"
+          >!!!pets health care.....🐱The greatness of a nation and its moral
+          progress can be judged by the way its animals are treated🐱.....pets
+          health care!!!</marquee
+        >
+      </div>
+      <div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 mt-10 container mx-auto gap-10"
+        >
+          <div
+            class="card lg:card-side bg-gradient-to-r from-cyan-500 to-blue-500 shadow-xl"
+          >
+            <figure>
+              <img
+                src="/c1-assets/617a032c91678c37343209bb6bef2f6d-removebg-preview 2.png"
+                alt="Album"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-heading">Dog Health</h2>
+              <p class="font-paragraph">
+                Small, miniature and toy breeds are a celebration of the wide
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-warning">More</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card lg:card-side bg-gradient-to-t from-sky-500 to-indigo-500 shadow-xl"
+          >
+            <figure>
+              <img
+                src="/c1-assets/download__11_-removebg-preview (1) 2.png"
+                alt="Album"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-heading">Dog Care</h2>
+              <p class="font-paragraph">
+                Being a small dog in a big world can be a challenge. However,
+                small dogs very often get away with naughty or dangerous
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-warning">More</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card lg:card-side bg-gradient-to-bl from-violet-500 to-fuchsia-500 shadow-xl"
+          >
+            <figure>
+              <img
+                src="/c1-assets/How_To_Choose_The_Best_Veterinarian_For_My_Cat__-_TheCatSite-removebg-preview 2.png"
+                alt="Album"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-heading">Small Cat</h2>
+              <p class="font-paragraph">
+                Many people consider cats to be self-sufficient, independent
+                pets. But you might be surprised to know that cat health care
+                requires
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-warning">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Trending Pet Products-->
+
+      <section class="my-12 lg:my-32 bg-bgHead py-12 lg:py-32">
+        <div class="container mx-auto">
+          <div class="mb-9 md:mb-12">
+            <h2 class="section-heading text-black mx-6 font-heading">
+              Trending Pet Products
+            </h2>
+          </div>
+          <!-- products card -->
+          <div
+            class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 bg-bgHead"
+          >
+            <div
+              class="col-span-1 row-span-3 bg-[url('/c1-assets/cute-pet-small.png')] bg-no-repeat bg-right bg-contain bg-bgPrimary text-white rounded-md shadow-sm hover:"
+            >
+              <div class="px-8 py-10 space-y-6 text-black">
+                <h3 class="card-heading font-heading">T- Shirt For Dogs</h3>
+                <p>
+                  Discover a world of treats, toys, and <br />
+                  essentials handpicked for
+                </p>
+                <button class="btn bg-base-100 px-7 py-3 hover:bg-base-100/80">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/dog-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Pet Bed</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/fish-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Fish</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/bird-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Bird</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/cat-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Cat</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="c1-assets/mouse-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Pet Bed</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/rabbit-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Rabbit</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/dog-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Pet Bed</h4>
+                <p>$30.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/fish-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Fish</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-base-100 rounded-md p-4">
+              <div
+                class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
+              >
+                <img
+                  class="w-[48px] h-[48px]"
+                  src="/c1-assets/cat-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <small>
+                  <i class="fa-solid fa-star text-[18px] text-[#FFC107]"></i>
+                  4.5
+                </small>
+                <h4>Cat</h4>
+                <p>$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
