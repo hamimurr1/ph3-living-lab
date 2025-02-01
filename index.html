@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/tailwind.config.js" />
     <title>My Pet</title>
-    <!--font awsome -->
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/351ef354a9.js"
       crossorigin="anonymous"
@@ -63,254 +63,236 @@
   <body>
     <header>
       <!--Navbar section-->
-      <section class="w-full bg-bgHead">
-        <section class="container mx-auto bg-bgHead">
-          <nav class="font-paragraph">
-            <div class="navbar">
-              <div class="navbar-start">
-                <div class="dropdown">
-                  <div
-                    tabindex="0"
-                    role="button"
-                    class="btn btn-ghost lg:hidden"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16"
-                      />
-                    </svg>
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-                  >
-                    <li><a>Find a pet</a></li>
-                    <li><a>Breeds</a></li>
-                    <li><a>Contact us</a></li>
-                  </ul>
-                </div>
-                <a class="text-2xl font-bold flex items-center">
-                  <img src="/c1-assets/logo-header.png" alt="" /> Pet
-                  <span class="text-warning">House</span></a
-                >
-              </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                  <li><a>Find a pet</a></li>
-                  <li><a>Breeds</a></li>
-                  <li><a>Contact us</a></li>
-                </ul>
-              </div>
-              <div class="navbar-end gap-x-3">
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a class="btn btn-outline btn-warning bg-none text-white"
-                  >Login</a
-                >
-                <a class="btn btn-warning">Register</a>
-              </div>
+      <section class="bg-[#FFF9F4] lg:border-none border-b-2">
+        <header class="container mx-auto flex justify-between items-center p-5">
+          <div class="flex items-center gap-x-3">
+            <img src="./c1-assets/logo-header.png" alt="" />
+            <h1 class="text-2xl font-bold font-primary hidden lg:block">
+              pet house
+            </h1>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex gap-x-6">
+              <li class="font-secondary">Find a pet</li>
+              <li class="font-secondary">Breeds</li>
+              <li class="font-secondary">Contact us</li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <div class="flex items-center gap-x-5">
+              <i class="text-xl fa-regular fa-bell"></i>
+              <i class="text-xl fa-solid fa-magnifying-glass"></i>
+              <a
+                class="font-secondary border border-[#FFDC25] px-6 py-1 rounded-md hover:bg-[#FFDC25] transition-all"
+                href=""
+                >Login</a
+              >
+              <a
+                class="font-secondary bg-[#FFDC25] border border-[#FFDC25] px-6 py-1 rounded-md hover:bg-transparent transition-all hover:border hover:border-[#FFDC25]"
+                href=""
+                >Register</a
+              >
             </div>
-          </nav>
-        </section>
+          </div>
+          <div class="inline-block lg:hidden">
+            <i class="fa-solid fa-bars text-3xl"></i>
+          </div>
+        </header>
       </section>
       <!--Hero section-->
       <section
-        class="my-20 container sm:w-full lg:h-screen h-[1100px] lg:px-5 px-5 sm:pt-10 mx-auto bg-[url('./c1-assets/cat-big.png')] bg-center bg-no-repeat bg-contain lg:bg-center lg:bg-no-repeat lg: sm:bg-center sm:bg-contain sm:bg-no-repeat"
+        class="my-20 container sm:w-full lg:h-screen h-[80vh] lg:px-5 px-5 sm:pt-10 mx-auto bg-[url('./c1-assets/cat-big.png')] bg-bottom bg-no-repeat bg-contain lg:bg-center lg:bg-no-repeat sm:bg-contain sm:bg-no-repeat"
       >
         <div class="font-paragraph container mx-auto">
-          <h1 class="font-heading text-6xl font-bold">
+          <h1 class="font-heading text-6xl font-bold animate-bounce">
             Pamper Your Pet, <br />Because They Deserve <br />the Bes
           </h1>
           <p class="my-10 text-xl">
             Discover a world of treats, toys, and essentials handpicked for
             <br />your furry friends. Shop now and make tails wag with joy!
           </p>
+          <a class="btn btn-warning px-8">Find A Pet</a>
         </div>
       </section>
     </header>
 
     <main>
       <!--Browse By Categories-->
-      <h1 class="font-heading text-3xl container mx-auto">
-        Browse By Categories
-      </h1>
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 container mx-auto"
-      >
-        <div class="card bg-bgPrimary my-20 h-64 pt-10">
-          <div class="avatar">
-            <div
-              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
-            >
-              <img src="/c1-assets/dog-cartoon.png" />
-            </div>
-          </div>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-xl">Dog</h2>
-            <p class="text-xs">3 items</p>
-            <div class="card-actions"></div>
-          </div>
-        </div>
-        <div class="card bg-bgPrimary my-20 pt-10">
-          <div class="avatar">
-            <div
-              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
-            >
-              <img src="/c1-assets/fish-cartoon.png" />
-            </div>
-          </div>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-xl">Fish</h2>
-            <p class="text-xs">3 items</p>
-            <div class="card-actions"></div>
-          </div>
-        </div>
-        <div class="card bg-bgPrimary my-20 pt-10">
-          <div class="avatar">
-            <div
-              class="ring-primary ring-offset-base-100 w-24 rounded-full ring mx-auto"
-            >
-              <img src="/c1-assets/cat-cartoon.png" />
-            </div>
-          </div>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-xl">Cat</h2>
-            <p class="text-xs">3 items</p>
-            <div class="card-actions"></div>
-          </div>
-        </div>
-        <div class="card bg-bgPrimary my-20 pt-10">
-          <div class="avatar">
-            <div
-              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
-            >
-              <img src="/c1-assets/bird-cartoon.png" />
-            </div>
-          </div>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-xl">Bird</h2>
-            <p class="text-xs">3 items</p>
-            <div class="card-actions"></div>
-          </div>
-        </div>
-        <div class="card bg-bgPrimary my-20 pt-10">
-          <div class="avatar">
-            <div
-              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
-            >
-              <img src="/c1-assets/cute-pet-small.png" />
-            </div>
-          </div>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-xl">Small pet</h2>
-            <p class="text-xs">3 items</p>
-            <div class="card-actions"></div>
-          </div>
-        </div>
-        <div class="card bg-bgPrimary my-20 pt-10">
-          <div class="avatar">
-            <div
-              class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
-            >
-              <img src="/c1-assets/rabbit-cartoon.png" />
-            </div>
-          </div>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-xl">Rabit</h2>
-            <p class="text-xs">3 items</p>
-            <div class="card-actions"></div>
-          </div>
-        </div>
-      </div>
-      <!--Pet Health section-->
-      <div class="marquee-hero font-heading">
-        <marquee behavior="slide loop" direction="left right"
-          >!!!pets health care.....🐱The greatness of a nation and its moral
-          progress can be judged by the way its animals are treated🐱.....pets
-          health care!!!</marquee
-        >
-      </div>
-      <div>
+      <section>
+        <h1 class="font-heading text-3xl container mx-auto px-2">
+          Browse By Categories
+        </h1>
         <div
-          class="grid grid-cols-1 lg:grid-cols-3 mt-10 container mx-auto gap-10"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 container mx-auto my-10 px-2"
         >
-          <div
-            class="card lg:card-side bg-gradient-to-r from-cyan-500 to-blue-500 shadow-xl"
-          >
-            <figure>
-              <img
-                src="/c1-assets/617a032c91678c37343209bb6bef2f6d-removebg-preview 2.png"
-                alt="Album"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title font-heading">Dog Health</h2>
-              <p class="font-paragraph">
-                Small, miniature and toy breeds are a celebration of the wide
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-warning">More</button>
+          <div class="card bg-bgPrimary pt-10">
+            <div class="avatar">
+              <div
+                class="ring-primary ring-off set-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+              >
+                <img src="/c1-assets/dog-cartoon.png" />
               </div>
             </div>
-          </div>
-          <div
-            class="card lg:card-side bg-gradient-to-t from-sky-500 to-indigo-500 shadow-xl"
-          >
-            <figure>
-              <img
-                src="/c1-assets/download__11_-removebg-preview (1) 2.png"
-                alt="Album"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title font-heading">Dog Care</h2>
-              <p class="font-paragraph">
-                Being a small dog in a big world can be a challenge. However,
-                small dogs very often get away with naughty or dangerous
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-warning">More</button>
-              </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl">Dog</h2>
+              <p class="text-xs">3 items</p>
+              <div class="card-actions"></div>
             </div>
           </div>
-          <div
-            class="card lg:card-side bg-gradient-to-bl from-violet-500 to-fuchsia-500 shadow-xl"
+          <div class="card bg-bgPrimary pt-10">
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+              >
+                <img src="/c1-assets/fish-cartoon.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl">Fish</h2>
+              <p class="text-xs">3 items</p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+          <div class="card bg-bgPrimary pt-10">
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring mx-auto"
+              >
+                <img src="/c1-assets/cat-cartoon.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl">Cat</h2>
+              <p class="text-xs">3 items</p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+          <div class="card bg-bgPrimary pt-10">
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+              >
+                <img src="/c1-assets/bird-cartoon.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl">Bird</h2>
+              <p class="text-xs">3 items</p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+          <div class="card bg-bgPrimary pt-10">
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+              >
+                <img src="/c1-assets/cute-pet-small.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl">Small pet</h2>
+              <p class="text-xs">3 items</p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+          <div class="card bg-bgPrimary pt-10">
+            <div class="avatar">
+              <div
+                class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mx-auto"
+              >
+                <img src="/c1-assets/rabbit-cartoon.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl">Rabit</h2>
+              <p class="text-xs">3 items</p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Pet Health section-->
+      <section>
+        <div class="marquee-hero font-heading">
+          <marquee behavior="slide loop" direction="left right"
+            >!!!pets health care.....🐱The greatness of a nation and its moral
+            progress can be judged by the way its animals are treated🐱.....pets
+            health care!!!</marquee
           >
-            <figure>
-              <img
-                src="/c1-assets/How_To_Choose_The_Best_Veterinarian_For_My_Cat__-_TheCatSite-removebg-preview 2.png"
-                alt="Album"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title font-heading">Small Cat</h2>
-              <p class="font-paragraph">
-                Many people consider cats to be self-sufficient, independent
-                pets. But you might be surprised to know that cat health care
-                requires
-              </p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-warning">More</button>
+        </div>
+        <div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 mt-10 container mx-auto gap-10 px-2"
+          >
+            <div
+              class="card lg:card-side bg-gradient-to-r from-cyan-500 to-blue-500 shadow-xl"
+            >
+              <figure>
+                <img
+                  src="/c1-assets/617a032c91678c37343209bb6bef2f6d-removebg-preview 2.png"
+                  alt="Album"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-heading">Dog Health</h2>
+                <p class="font-paragraph">
+                  Small, miniature and toy breeds are a celebration of the wide
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-warning">More</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card lg:card-side bg-gradient-to-t from-sky-500 to-indigo-500 shadow-xl"
+            >
+              <figure>
+                <img
+                  src="/c1-assets/download__11_-removebg-preview (1) 2.png"
+                  alt="Album"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-heading">Dog Care</h2>
+                <p class="font-paragraph">
+                  Being a small dog in a big world can be a challenge. However,
+                  small dogs very often get away with naughty or dangerous
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-warning">More</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card lg:card-side bg-gradient-to-bl from-violet-500 to-fuchsia-500 shadow-xl"
+            >
+              <figure>
+                <img
+                  src="/c1-assets/How_To_Choose_The_Best_Veterinarian_For_My_Cat__-_TheCatSite-removebg-preview 2.png"
+                  alt="Album"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-heading">Small Cat</h2>
+                <p class="font-paragraph">
+                  Many people consider cats to be self-sufficient, independent
+                  pets. But you might be surprised to know that cat health care
+                  requires
+                </p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-warning">More</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--Trending Pet Products-->
 
       <section class="my-12 lg:my-32 bg-bgHead py-12 lg:py-32">
         <div class="container mx-auto">
           <div class="mb-9 md:mb-12">
-            <h2 class="section-heading text-black mx-6 font-heading text-2xl">
+            <h2 class="section-heading text-black mx-6 font-heading text-3xl">
               Trending Pet Products
             </h2>
           </div>
@@ -516,7 +498,7 @@
             </h2>
           </div>
           <!-- price-cards -->
-          <div class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+          <div class="grid grid-cols-1 lg:grid-cols-10 gap-6 px-2">
             <div
               class="col-span-1 lg:col-span-6 bg-gradient-to-t from-[#F8CCFB] to-[#ACD2FD] rounded-md text-white"
             >
@@ -524,11 +506,13 @@
                 class="w-full h-full bg-[url('./c1-assets/cute-dog-mid.png')] bg-no-repeat bg-right bg-contain rounded-md"
               >
                 <div class="px-20 py-36">
-                  <p class="text-black font-paragrapsh text-xl">Under Price</p>
+                  <p class="text-black font-paragrapsh text-xl hidden md:block">
+                    Under Price
+                  </p>
                   <h3 class="card-heading font-heading text-black text-4xl">
                     Pet Grooming Mitt
                   </h3>
-                  <h4 class="text-xl text-white font-paragraph">
+                  <h4 class="text-xl text-white font-paragraph hidden md:block">
                     (Easy Hair Removal)
                   </h4>
                   <h1 class="primary-heading text-black font-heading text-5xl">
@@ -559,7 +543,74 @@
           </div>
         </div>
       </section>
+      <!--News section-->
+      <section class="translate-y-40 md:translate-y-48 -mt-16">
+        <div class="container mx-auto px-4">
+          <div
+            class="py-10 px-12 md:px-24 bg-bgHead rounded-md flex flex-col md:flex-row items-center gap-x-32"
+          >
+            <div>
+              <img src="./c1-assets/cute-pet-mid.png" alt="" />
+            </div>
+            <div class="space-y-6 text-center md:text-left">
+              <h2 class="section-heading font-heading text-3xl">
+                Get Pawsome News!
+              </h2>
+              <p class="font-paragraph">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <div>
+                <input
+                  class="p-5 w-full rounded-md"
+                  type="text"
+                  placeholder="Enter email..."
+                />
+              </div>
+              <button
+                class="btn font-primary bg-warning text-white px-7 py-3 hover:bg-bgPrimary"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-bgPrimary pt-28 md:pt-40 font-paragraph text-xl px-4">
+      <div class="container mx-auto pt-10">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 py-12 text-black">
+          <div class="col-span-2">
+            <div class="flex items-center gap-2 card-heading">
+              <img
+                class="w-[48px] h-[48px]"
+                src="./c1-assets/logo-footer.png"
+                alt=""
+              />
+              <h3 class="text-3xl">My Pets</h3>
+            </div>
+            <p class="w-full md:w-[50%] mt-6">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends
+            </p>
+          </div>
+          <div class="col-span-2">
+            <ul class="space-y-8">
+              <li>Find a pet</li>
+              <li>Breeds</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="flex flex-col justify-end">
+            <p>Follow Us</p>
+            <div class="flex items-center gap-4 mt-2">
+              <i class="fa-brands fa-facebook text-2xl"></i>
+              <i class="fa-brands fa-instagram text-2xl"></i>
+              <i class="fa-brands fa-linkedin text-2xl"></i>
+              <i class="fa-brands fa-youtube text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
